@@ -27,4 +27,4 @@ fetch(url)
         links.forEach(element => {
             const href = element.getAttribute('href');
             console.log('Link:', href);
-        }));
+ }));

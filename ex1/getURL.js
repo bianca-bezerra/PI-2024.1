@@ -6,10 +6,9 @@
 import fetch from 'node-fetch';
 
 const urlGithub = "https://api.github.com/users/github";
-const urlUsers =  "https://jsonplaceholder.typicode.com/users"
 
 // Conexão
-fetch(urlUsers)
+fetch(urlGithub)
 .then(response => {
     
     // Informações sobre o request
@@ -21,5 +20,5 @@ fetch(urlUsers)
 
 .then(response => {
     // Body
-    console.table(response);
+    console.log(response);
 })

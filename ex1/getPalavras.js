@@ -23,7 +23,7 @@ async function listarOcorrencias() {
 
 function acharOcorrencias(texto, termoBuscado) {
     if(texto.includes(termoBuscado)){
-        const palavras = texto.match(/[a-zA-ZÀ-ÖØ-öø-ÿ0-9]+/g); //
+        const palavras = texto.match(/[a-zA-ZÀ-ÖØ-öø-ÿ0-9]+/g);
 
         palavras.forEach((palavra, index) => {
             if (palavra.toLowerCase() === termoBuscado.toLowerCase()) {
